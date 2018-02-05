@@ -1,0 +1,24 @@
+{
+  "name": "sheet-js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jabarlew/SheetJS.git"
+  },
+  "keywords": [],
+  "author": "Bartosz Lewandowski <barlewdesign@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jabarlew/SheetJS/issues"
+  },
+  "homepage": "https://github.com/Jabarlew/SheetJS#readme",
+  "browserslist": [
+    "last 4 versions",
+    "ie 11"
+  ]
+}

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "shell-exec 'node-sass -rw sass/index.scss docroot/styles.css' 'browser-sync start -s 'docroot' -f 'docroot'",
+    "start": "shell-exec 'npm run devserver' 'npm run sass'",
+    "devserver": "browser-sync start -s 'docroot' -f 'docroot'",
+    "sass": "node-sass -r -w sass/index.scss docroot/styles.css",
     "ngrok": "ngrok http 3000 --log 'stdout' --log-level 'debug'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +26,7 @@
     "ie 11"
   ],
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "browser-sync": "^2.23.6",
     "ngrok": "^2.2.25",
     "node-sass": "^4.7.2",

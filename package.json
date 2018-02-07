@@ -6,7 +6,7 @@
   "scripts": {
     "start": "shell-exec 'npm run devserver' 'npm run sass'",
     "devserver": "browser-sync start -s 'docroot' -f 'docroot'",
-    "sass": "node-sass -r -w sass/index.scss docroot/styles.css",
+    "sass": "node-sass -rw sass -o docroot",
     "ngrok": "ngrok http 3000 --log 'stdout' --log-level 'debug'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

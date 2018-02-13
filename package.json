@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "shell-exec 'npm run devserver' 'npm run sass'",
+    "start": "shell-exec 'npm run devserver' 'npm run sass:watch'",
     "devserver": "browser-sync start -s 'docroot' -f 'docroot'",
-    "sass": "node-sass -rw sass -o docroot",
+    "sass": "node-sass sass -o docroot",
+    "sass:watch": "node-sass -rw sass -o docroot",
     "ngrok": "ngrok http 3000 --log 'stdout' --log-level 'debug'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

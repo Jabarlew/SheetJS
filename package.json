@@ -31,5 +31,8 @@
     "ngrok": "^2.2.25",
     "node-sass": "^4.7.2",
     "shell-executor": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
   }
 }
